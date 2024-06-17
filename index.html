@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav id="navbar">
+        <header>Python Documentation</header>
+        <ul>
+            <li><a id="nav-link" href="#Introduction_to_Python">Introduction to Python</a></li>
+            <li><a id="nav-link" href="#Python_Data_Structures">Python Data Structures</a></li>
+            <li><a id="nav-link" href="#Control_Flow_in_Python">Control Flow in Python</a></li>
+            <li><a id="nav-link" href="#Object-Oriented_Programming_in_Python">Object-Oriented Programming in Python</a></li>
+            <li><a id="nav-link" href="#References">References</a></li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="Introduction_to_Python">
+            <header>Introduction to Python</header>
+            <article>
+                <p>Python is a high-level, interpreted programming language known for its simplicity and readability.
+                    Created by Guido van Rossum and first released in 1991, Python has since become one of the most
+                    popular programming languages in the world. Its design philosophy emphasizes code readability and
+                    simplicity, making it an excellent choice for both beginners and experienced programmers.</p>
+                <p>Python supports multiple programming paradigms, including procedural, object-oriented, and functional
+                    programming. This flexibility allows developers to choose the best approach for their projects.
+                    Python's extensive standard library, often referred to as "batteries included," provides modules and
+                    packages that facilitate various tasks, from web development to data analysis.</p>
+                <p>One of Python's key features is its dynamic typing, which allows variables to change type during
+                    execution. This can lead to more flexible and concise code, although it may also introduce runtime
+                    errors if not handled carefully. Additionally, Python's memory management is handled by an automatic
+                    garbage collector, reducing the need for manual memory allocation and deallocation.</p>
+                <p>Python's ecosystem includes a vast array of third-party libraries and frameworks, such as Django for
+                    web development, Pandas for data analysis, and TensorFlow for machine learning. These libraries,
+                    combined with Python's ease of use, make it a powerful tool for a wide range of applications.
+                </p>
+                <p>Example: Hello World in Python</p>
+                <code>
+                print("Hello, World!")
+               </code>
+            </article>
+        </section>
+        <section class="main-section" id="Python_Data_Structures">
+            <header>Python Data Structures</header>
+            <article>
+                <p>Python provides several built-in data structures that are essential for writing efficient and
+                    readable code. These include lists, tuples, dictionaries, and sets. Understanding how to use these
+                    data structures effectively is crucial for any Python developer.</p>
+                <ul id="Python_Data_Structures_list">
+                    <li id="Python_Data_Structures_listitems">
+                        <header>Lists</header>
+                        <p>Lists are ordered, mutable collections of items. They can store items of different types and
+                            are indexed starting from zero. Lists are versatile and can be used for a wide range of
+                            applications, from simple collections to complex data manipulations.</p>
+                        <p>Example: Creating and Manipulating a List</p>
+                        <code>"fruits = ["apple", "banana", "cherry"] <br>fruits.append("date")
+                        <br>print(fruits)
+                        <br># Output: ['apple', 'banana', 'cherry', 'date']
+                        </code>
+                    </li>
+                    <li id="Python_Data_Structures_listitems">
+                        <header>Tuples</header>
+                        <p>Tuples are similar to lists, but they are immutable, meaning their contents cannot be changed after creation. Tuples are useful for storing fixed collections of items and can help protect data from accidental modification.</p>
+                        <p>Example: Creating a Tuple</p>
+                        <code>coordinates = (10, 20)
+                            <br>print(coordinates)
+                            <br># Output: (10, 20)
+                        </code>
+                    </li>
+                    <li id="Python_Data_Structures_listitems">
+                        <header>Dictionaries</header>
+                        <p>Dictionaries are unordered collections of key-value pairs. They allow for fast retrieval of values based on their keys and are useful for storing and manipulating structured data.</p>
+                        <p>Example: Creating and Using a Dictionary</p>
+                        <code>student = {"name": "Alice", "age": 23, "major": "Computer Science"}
+                            <br>print(student["name"])
+                            <br># Output: Alice
+                        </code>
+                    </li>
+                    <li id="Python_Data_Structures_listitems">
+                        <header>Sets</header>
+                        <p>Sets are unordered collections of unique items. They are useful for membership testing and eliminating duplicate entries from a collection.</p>
+                        <p>Example: creating and Using a set</p>
+                        <code>unique_numbers = {1, 2, 3, 3, 4}
+                            <br>print(unique_numbers)
+                            <br># Output: {1, 2, 3, 4}
+                        </code>
+                    </li>
+                </ul>
+            </article>
+        </section>
+        <section class="main-section" id="Control_Flow_in_Python">
+            <header>Control Flow in Python</header>
+            <article>
+                <p>Control flow statements in Python determine the order in which statements are executed. These include conditional statements, loops, and exception handling.</p>
+                <ul id="Control_Flow_in_Python_list">
+                    <li id="Control_Flow_in_Python_listitems">
+                        <header>Conditional Statements</header>
+                        <p>Conditional statements allow the execution of different blocks of code based on certain conditions. The primary conditional statements in Python are 'if' , 'elif' ,and 'else'</p>
+                        <p>Example: Using Conditional Statements</p>
+                        <code>
+                            "age = 18
+                            <br>if age < 18:
+                                <br>print("Minor")
+                            <br>elif age == 18:
+                                <br>print("Just turned adult")
+                            <br>else:
+                                <br>printf("Adult")"
+                        </code>
+                    </li>
+                    <li id="Control_Flow_in_Python_listitems">
+                        <header>Loops</header>
+                        <p>Loops are used to repeat a block of code multiple times. Python supports two main types of loops: for loops and while loops.</p>
+                        <p>Example: Using a 'for' Loop
+                        </p>
+                        <code>
+                            for i in range(5):
+                            <br>print(i)
+                            <br># Output: 0 1 2 3 4
+                        </code>
+                        <p>Example: Using a 'while' Loop
+                        </p>
+                        <code>
+                            count = 0
+                            <br>while count < 5:
+                            <br>print(count)
+                            <br>count += 1
+                            <br># Output: 0 1 2 3 4
+                        </code>
+                    </li>
+                    <li id="Control_Flow_in_Python_listitems">
+                        <header>Exception Handling</header>
+                        <p>Exception handling in Python is done using try, except, else, and finally blocks. It allows for graceful handling of errors and ensures that resources are cleaned up properly.</p>
+                        <p>Example: Using Exception Handling</p>
+                        <code>
+                            try:
+                            <br>result = 10 / 0
+                        <br>except ZeroDivisionError:
+                            <br>print("Cannot divide by zero")
+                        <br>finally:
+                            <br>print("Execution completed")
+                        <br># Output: Cannot divide by zero
+                        <br>#         Execution completed
+                        </code>
+                    </li>
+                </ul>
+            </article>
+        </section>
+        <section class="main-section" id="Object-Oriented_Programming_in_Python">
+            <header>Object Oriented Programming in Python</header>
+            <p>Object-oriented programming (OOP) is a programming paradigm based on the concept of objects, which are instances of classes. Python supports OOP, enabling developers to create reusable and modular code.</p>
+            <ul id="Object-Oriented_Programming_in_Python_list">
+                <li id="Object-Oriented_Programming_in_Python_listitems">
+                    <header>Classes and Objects</header>
+                    <p>A class is a blueprint for creating objects, defining their properties and behaviors. An object is an instance of a class, with its own set of attributes and methods.</p>
+                    <p>Example: Defining a Class and Creating an Object</p>
+                    <code>class Dog:
+                        <br>def __init__(self, name, age):
+                            <br>self.name = name
+                            <br>self.age = age
+                    
+                        <br>def bark(self):
+                            <br>print(f"{self.name} says woof!")
+                    
+                    <br>my_dog = Dog("Buddy", 3)
+                    <br>my_dog.bark()
+                    <br># Output: Buddy says woof!</code>
+                </li>
+                <li id="Object-Oriented_Programming_in_Python_listitems">
+                    <header>Inheritance</header>
+                    <p>Inheritance allows a class to inherit properties and methods from another class. This promotes code reuse and can lead to more logical and hierarchical class structures.</p>
+                    <p>Example: Implementing Inheritance</p>
+                    <code>class Animal:
+                        <br>def __init__(self, name):
+                            <br>self.name = name
+                    
+                        <br>def speak(self):
+                            <br>pass
+                    
+                    <br>class Cat(Animal):
+                        <br>def speak(self):
+                            <br>print(f"{self.name} says meow!")
+                    
+                    <br>my_cat = Cat("Whiskers")
+                    <br>my_cat.speak()
+                    <br># Output: Whiskers says meow!</code>
+                </li>
+                <li id="Object-Oriented_Programming_in_Python_listitems">
+                    <header>Polymorphism</header>
+                    <p>Polymorphism allows objects of different classes to be treated as objects of a common superclass. It is often used to implement method overriding and dynamic method resolution.</p>
+                    <p>Example: Using Polymorphism</p>
+                    <code>class Bird(Animal):
+                        <br>def speak(self):
+                            <br>print(f"{self.name} says chirp!")
+                    
+                    <br>animals = [Dog("Buddy", 3), Cat("Whiskers"), Bird("Tweety")]
+                    
+                    <br>for animal in animals:
+                        <br>animal.speak()
+                    <br># Output: Buddy says woof!
+                    <br>#         Whiskers says meow!
+                    <br>#         Tweety says chirp!
+                    </code>
+                </li>
+            </ul>
+        </section>
+        <section class="main-section" id="References">
+            <header>References</header>
+            <p>All the documentation in this page is taken from <a id="References_link" href="https://realpython.com/" target="_blank">Real Python</a></p>
+        </section>
+    </main>
+</body>
+
+</html>
